@@ -10,20 +10,20 @@ public class Program
 {
     public static void Main(string[] args)
     {
+        //defining a vector INSTNACE
         Vector v1 = new Vector(1.0, 2.0, 3.0);
         Vector v2 = new Vector(4, 5, 6);
 
-//        Console.WriteLine(v1);
+        Console.WriteLine(v1);
 
-        double y = 6;
-
-        Console.Write(sum(y));
 
     }
 
     public static double reduce(double x)
     {
+        
         if (x > 2) {
+            //recursive call 
             return reduce(x / 2);
         }
         return x;
@@ -33,6 +33,7 @@ public class Program
     {
         if (x > 0)
         {
+            //recursive call 
             return sum(x - 1) + x;
             
         }
@@ -40,22 +41,24 @@ public class Program
     } 
 }
 
+//defining the Vector CLASS
 public class Vector
 {
 
-    public double x;
+    public double x; //attribute DECLARATION 
     public double y;
     public double z;
 
-    public Vector(double i, double j, double k)
+    public Vector(double i, double j, double k) //constructor
     {
-        this.x = i;
+        this.x = i; //attribute DEFINATIONS  
         this.y = j;
         this.z = k;
     }
 
-    public Vector add(Vector v)
+    public Vector add(Vector v) //vector method add , returns the same vector but updated
     {
+        //instance call: myVectorInstance.add()
         this.x += v.x;
         this.y += v.y;
         this.z += v.z;
@@ -63,13 +66,18 @@ public class Vector
         return this;
     }
 
-    public static Vector getAdd(Vector v, Vector v2)
+    public static Vector getAdd(Vector v, Vector v2) //vector method getAdd, returns a new vector 
     {
+        //static means it must be refrenced from the class and not the instance
+
+        //class call: Vector.getAdd();
+
         return new Vector(v2.x + v.x, v2.y + v.y, v2.z + v.z);
     }
 
     public override string ToString()
     {
+        //over riding the toString method, toString is a method in every class in c#
         return $"X: {x} Y: {y} Z: {z}";
     }
 }

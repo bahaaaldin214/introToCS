@@ -15,6 +15,7 @@ namespace WinFormsApp1
         public Form2()
         {
             InitializeComponent();
+            //form 2 does nothing for now 
         }
     }
 }
