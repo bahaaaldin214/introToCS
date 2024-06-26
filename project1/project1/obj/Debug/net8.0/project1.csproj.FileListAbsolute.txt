@@ -12,3 +12,18 @@ C:\repos\project1\project1\obj\Debug\net8.0\refint\project1.dll
 C:\repos\project1\project1\obj\Debug\net8.0\project1.pdb
 C:\repos\project1\project1\obj\Debug\net8.0\project1.genruntimeconfig.cache
 C:\repos\project1\project1\obj\Debug\net8.0\ref\project1.dll
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\project1.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\project1.AssemblyInfoInputs.cache
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\project1.AssemblyInfo.cs
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\project1.csproj.CoreCompileInputs.cache
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\project1.sourcelink.json
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\project1.dll
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\refint\project1.dll
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\project1.pdb
+C:\repos\intro to cs\project1\project1\bin\Debug\net8.0\project1.exe
+C:\repos\intro to cs\project1\project1\bin\Debug\net8.0\project1.deps.json
+C:\repos\intro to cs\project1\project1\bin\Debug\net8.0\project1.runtimeconfig.json
+C:\repos\intro to cs\project1\project1\bin\Debug\net8.0\project1.dll
+C:\repos\intro to cs\project1\project1\bin\Debug\net8.0\project1.pdb
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\project1.genruntimeconfig.cache
+C:\repos\intro to cs\project1\project1\obj\Debug\net8.0\ref\project1.dll

@@ -2,20 +2,67 @@
 //native types: int, float, string etc
 //data structures: vectors, arrays, etc 
 
+using System.Collections.Generic;
+using System.Timers;
 
 
 using System;
+using System.Runtime.CompilerServices;
+using System.Threading;
 
 public class Program
 {
+    
+
     public static void Main(string[] args)
     {
         //defining a vector INSTNACE
         Vector v1 = new Vector(1.0, 2.0, 3.0);
         Vector v2 = new Vector(4, 5, 6);
 
-        Console.WriteLine(v1);
 
+        Program program = new Program();
+
+        Console.WriteLine(v1);
+        System.Timers.Timer mytimer = new System.Timers.Timer(2000);
+
+        // Attach the event handler
+        mytimer.Elapsed += program.update;
+
+        // Enable auto-reset
+        mytimer.AutoReset = true;
+
+        // Start the timer
+        mytimer.Start();
+
+        // Keep the program running
+        Console.ReadLine();
+    }
+    LinkedList<Vector> body;
+    int index = 0;
+
+    Program() {
+        Vector[] defaultValues = { new Vector(0, 0, 1), new Vector(0, 0, 0), new Vector(0, 0, 0), new Vector(0, 0, 0) };
+
+        this.body = new LinkedList<Vector>(defaultValues);
+
+    }
+
+     void update(object sender, ElapsedEventArgs e)
+    {
+        var head = body.First;
+        body.RemoveFirst();
+        var tail = body.Last;
+        body.AddLast(head);
+
+        tail = body.Last;
+        while (tail != null)
+        {
+            Console.Write(tail.Value + " ");
+
+            tail = tail.Previous;
+        }
+        Console.WriteLine();
 
     }
 
@@ -40,6 +87,7 @@ public class Program
         return x;
     } 
 }
+
 
 //defining the Vector CLASS
 public class Vector
@@ -87,3 +135,6 @@ public class Vector
 //f(x) = f(x -1) + x
 
 //f(2) = f(1) + f(0) + 0 + 1 + 2
+
+
+// [5] -> [4] -> [3]
